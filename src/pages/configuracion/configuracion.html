@@ -1,0 +1,61 @@
+<ion-header>
+  <ion-navbar color="tribius1">
+    <ion-title text-center class="toolbar-background">Configuración</ion-title>
+    <ion-fab right middle bottom>
+      <button ion-fab mini class="button-wooden" (click)="updateSound()">
+        <ion-icon ios="ios-volume-{{icono_son}}" md="md-volume-{{icono_son}}"></ion-icon>
+      </button>
+    </ion-fab>
+  </ion-navbar>
+</ion-header>
+
+<ion-content no-border>
+  <div class="form-1">
+    <form [formGroup]="formEstablecimiento" (ngSubmit)="UpdateMyEstablecimiento()">
+      <ion-item color="fondo" no-lines>
+        <ion-label color="light">Establecimiento</ion-label>
+        <ion-select [(ngModel)]="establecimiento" placeholder="--Seleccione--" formControlName="establecimiento">
+          <ion-option *ngFor="let establecimiento of establecimientos" value="{{establecimiento.id}}">{{establecimiento.nombre}}</ion-option>
+        </ion-select>
+      </ion-item>
+    </form>
+    <form [formGroup]="formuser" (ngSubmit)="UpdateMyUser()">
+      <ion-item color="fondo" no-lines>
+        <ion-label color="light" no-border>Nombre</ion-label>
+        <ion-input type="text" formControlName="name" placeholder="Mi Nombre" value="{{name}}" text-right></ion-input>
+      </ion-item>
+      <ion-item color="fondo" no-lines>
+        <ion-label color="light" no-lines>Sexo</ion-label>
+        <ion-select [(ngModel)]="sexoCmb" formControlName="sexo">
+          <ion-option value="--indefinido--">--indefinido--</ion-option>
+          <ion-option value="Masculino">Masculino</ion-option>
+          <ion-option value="Femenino">Femenino</ion-option>
+        </ion-select>
+      </ion-item>
+      <ion-item color="fondo" no-lines>
+        <ion-range min="10" max="100" formControlName="edad" [(ngModel)]="edad" color="secondary">
+          <ion-label range-left color="light">Edad</ion-label>
+          <ion-label range-right color="light">{{edad}}</ion-label>
+        </ion-range>
+      </ion-item>
+      <ion-item color="fondo" no-lines>
+        <ion-label color="light" no-lines>Pantalla Completa</ion-label>
+        <ion-toggle color="secondary" (ionChange)="fullScreen()"></ion-toggle>
+      </ion-item>
+      <ion-item color="fondo" no-lines>
+        <ion-label color="light">Puntuación</ion-label>
+        <ion-label text-right>{{puntuacion}} pts</ion-label>
+      </ion-item>
+      <ion-item color="fondo" no-lines>
+        <ion-label color="light">Mi ID</ion-label>
+        <ion-label text-right>{{id}}</ion-label>
+      </ion-item>
+      <ion-fab right bottom>
+        <button class="button-wooden" ion-fab type="submit">
+          <ion-icon name="checkmark-circle-outline"></ion-icon>
+        </button>
+      </ion-fab>
+    </form>
+  </div>
+
+</ion-content>

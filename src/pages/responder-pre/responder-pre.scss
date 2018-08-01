@@ -1,0 +1,30 @@
+.marcador{
+    background-color: #E59540 !important;
+    border-radius: 61px 61px 61px 61px;
+    -moz-border-radius: 61px 61px 61px 61px;
+    -webkit-border-radius: 61px 61px 61px 61px;
+    border: 8px solid #CC6A2E;
+}
+.left{
+    text-align: left;
+}
+.centerT{
+    text-align: center;
+}
+.right{
+    text-align: right;
+    color: #FFF;
+
+}
+.transparent{
+    background-color: rgba(0, 0, 0, 0);
+}
+.item h2{
+    margin: 10px 0;
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #FFF;
+}
+.label{
+    margin: 13px 1px 1px 0;
+}

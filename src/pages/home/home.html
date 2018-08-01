@@ -1,17 +1,13 @@
 <ion-header>
-  <ion-navbar>
-    <ion-title>Home</ion-title>
+  <ion-navbar color="tribius1">
+    <ion-title text-center class="toolbar-background">Inicio</ion-title>
+    <ion-fab right middle bottom>
+      <button ion-fab mini class="button-wooden" (click)="updateSound()">
+        <ion-icon ios="ios-volume-{{icono_son}}" md="md-volume-{{icono_son}}"></ion-icon>
+      </button>
+    </ion-fab>
   </ion-navbar>
 </ion-header>
-
-<ion-content padding>
-  <h2>Welcome to Ionic!</h2>
-  <p>
-    This starter project comes with simple tabs-based layout for apps
-    that are going to primarily use a Tabbed UI.
-  </p>
-  <p>
-    Take a look at the <code>src/pages/</code> directory to add or change tabs,
-    update any existing page or create new pages.
-  </p>
+<ion-content no-border>
+  <h1 class="ha" (click)="goNext()">Tap para jugar</h1>
 </ion-content>

@@ -34,13 +34,44 @@ $app-direction: ltr;
 // The "primary" color is the only required color in the map.
 
 $colors: (
-  primary:    #488aff,
-  secondary:  #32db64,
-  danger:     #f53d3d,
-  light:      #f4f4f4,
-  dark:       #222
+  secondary:    #32db64,
+  primary:      #488aff,
+  primary1:     #00fa53,
+  primary2:     #32fa00,
+  bajo:         #7dfd15,
+  bajo2:        #b1fa29,
+  moderado:     #e5fc15,
+  moderado2:    #fdde31,
+  alto:         #f7be22,
+  alto2:        #fd7a00,
+  danger:       #ff4800,
+  danger2:      #ff1e00,
+  danger3:      #ff0000,
+  light:        #f4f4f4,
+  dark:         #222,
+  obscuro:         rgba(34, 34, 34, 0.548),
+  tribius: (
+    base: #2A5FE1,
+    contrast: #ffffff,
+  ),
+  tribius1: (
+    base: #2A5FE1,
+    contrast: #ffffff,
+  ),
+  fondo: (
+    base: hsla(218, 100%, 64%, 0),
+    contrast: #ffffff,
+  ),
+  botones: (
+    base: #2A5FE1,
+    contrast: #ffffff
+  ),
+  respuestas: (
+    base:hsla(258, 100%, 64%, 0),
+    contrast: #ffffff
+  ),
+  
 );
-
 
 // App iOS Variables
 // --------------------------------------------------
@@ -73,6 +104,7 @@ $colors: (
 @import "ionic.theme.default";
 
 
+
 // Ionicons
 // --------------------------------------------------
 // The premium icon font for Ionic. For more info, please see:
@@ -86,3 +118,20 @@ $colors: (
 
 @import "roboto";
 @import "noto-sans";
+
+@font-face {
+  font-family: 'Comic Bold';
+  font-style: normal;
+  font-weight: bold;
+  src: url('../assets/fonts/comicbd.ttf');
+}
+@font-face {
+  font-family: 'Comic';
+  font-weight: 500;
+  src: url('../assets/fonts/comic.ttf');
+}
+@font-face {
+  font-family: 'Erica One';
+  font-weight: 400;
+  src: url('../assets/fonts/EricaOne-Regular.ttf');
+  }

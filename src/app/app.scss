@@ -1,16 +1,297 @@
-// http://ionicframework.com/docs/theming/
+ion-content{
+    background-image: url("../assets/imgs/fondo.jpg");
+    background-size: 100% 100%;
+}/*
+body{
+    background-image: url("../assets/imgs/drawable-port.png");
+    background-size: 100% 100%;
+}*/
+.toolbar-background {
+    background-image: url("../assets/imgs/1x/Recurso\ 11.png");
+    background-size: 100% 100%;
+    background-color: rgba(127, 255, 212, 0);
+  }
 
+  .button-wooden{
+    background-color: rgba(127, 255, 212, 0);
+    background-image: url("../assets/imgs/1x/Recurso\ 1.png");
+    background-size: 100% 100%;
+}
+.icon-md{
+    color: #fff;
+}
+.icon-wp{
+    color: #fff;
+}
+.icon-ios{
+    color: #fff;
+}
 
-// App Global Sass
-// --------------------------------------------------
-// Put style rules here that you want to apply globally. These
-// styles are for the entire app and not just one component.
-// Additionally, this file can be also used as an entry point
-// to import other Sass files to be included in the output CSS.
-//
-// Shared Sass variables, which can be used to adjust Ionic's
-// default Sass variables, belong in "theme/variables.scss".
-//
-// To declare rules for a specific mode, create a child rule
-// for the .md, .ios, or .wp mode classes. The mode class is
-// automatically applied to the <body> element in the app.
+div.alert-wrapper{
+    background-color: rgba(240, 171, 61, 0.212) !important;
+    color: white;
+}
+
+div.alert-head{
+    background-image: url("../assets/imgs/1x/Recurso\ 11.png");
+    background-size: 100%;
+    color: aliceblue;
+    text-align: center
+}
+
+div.alert-radio-group{
+    background-image: url("../assets/imgs/1x/Recurso\ 3.png");
+    background-size: 100% 100%;
+    color: aliceblue;
+}
+.alert-md .alert-message{
+    background-image: url("../assets/imgs/1x/Recurso\ 3.png");
+    background-size: 100% 100%;
+    color: #fff;
+    font-style: normal;
+    font-family: "Comic" !important;
+    font-size: 140%;
+    height: 70%;
+}
+.alert-wp .alert-message{
+    background-image: url("../assets/imgs/1x/Recurso\ 3.png");
+    background-size: 100% 100%;
+    color: #fff;
+    font-style: normal;
+    font-family: "Comic" !important;
+    font-size: 140%;
+    height: 70%;
+}
+.alert-ios .alert-message{
+    background-image: url("../assets/imgs/1x/Recurso\ 3.png");
+    background-size: 100% 100%;
+    color: #fff;
+    font-style: normal;
+    font-family: "Comic" !important;
+    font-size: 140%;
+    height: 70%;
+}
+
+div.alert-button-group{
+    background-image: url("../assets/imgs/1x/tab.png");
+    background-size: 100% 100%;
+    color: aliceblue;
+}
+
+.button-inner{
+    color: aliceblue;
+
+}
+.alertname .alert-message{
+    background-image: url("../assets/imgs/1x/tab1.png");
+    background-size: 100% 100%;
+}
+.alert-input-group{
+    background-image: url("../assets/imgs/1x/tab2.png");
+    background-size: 100% 100%;
+}
+.form-1{
+    background-image: url("../assets/imgs/1x/tabla.png");
+    background-size: 100% 100%;
+    background-color: rgba(240, 171, 61, 0.397)
+} 
+.sombra{
+    background-color: rgba(240, 171, 61, 0.397);
+    color: #FFF;
+} 
+.wooden{
+    background-image: url("../assets/imgs/elpseWooden.png");
+    background-size: 100% 100%;
+    color: #FFF;
+} 
+
+.listo{
+    cursor: default;
+    position: relative;
+    top: 4px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100px;
+    margin: auto;
+    display: block;
+    
+    -webkit-animation: bounce .3s ease 2 alternate;
+    
+    font-family: 'Erica One';
+    font-size: 40px;
+    color: #FFF;
+    text-align: center;
+    line-height: 100px;
+    text-shadow: 0 1px 0 #CCC,
+                 0 2px 0 #CCC,
+                 0 3px 0 #CCC,
+                 0 4px 0 #CCC,
+                 0 5px 0 #CCC,
+                 0 6px 0 transparent,
+                 0 7px 0 transparent,
+                 0 8px 0 transparent,
+                 0 9px 0 transparent,
+                 0 10px 10px rgba(0, 0, 0, .6);
+}
+
+h2{
+    font-family: "Comic" !important;
+}
+p{
+    font-family: "Comic" !important;
+    font-size: 150%;
+    font-weight: bold;
+}
+ion-item{
+    background-color: rgba(196, 32, 32, 0) 
+}
+    
+ion-label{
+    font-style: bold;
+    font-family: "Comic" !important;
+    font-size: 110%;
+}
+ion-input{
+    background-image: url("../assets/imgs/1x/Recurso\ 7_1.png");
+    background-size: 100% 100%;
+    margin: 8px 12px;
+    font-style: normal;
+    font-family: "Comic" !important;
+    font-size: 110%;
+    height: 70%;
+    text-align: left
+
+}
+.alert-md .alert-input {
+    background-image: url("../assets/imgs/1x/Recurso\ 7_1.png");
+    background-size: 100% 100%;
+    color: #fff;
+    font-style: normal;
+    font-family: "Comic" !important;
+    font-size: 110%;
+    height: 70%;
+}
+.alert-wp .alert-input {
+    background-image: url("../assets/imgs/1x/Recurso\ 7_1.png");
+    background-size: 100% 100%;
+    color: #fff;
+    font-style: normal;
+    font-family: "Comic" !important;
+    font-size: 110%;
+    height: 70%;
+}
+.alert-ios .alert-input {
+    background-image: url("../assets/imgs/1x/Recurso\ 7_1.png");
+    background-size: 100% 100%;
+    color: #fff;
+    font-style: normal;
+    font-family: "Comic" !important;
+    font-size: 110%;
+    height: 70%;
+}
+ion-select{
+    margin: 8px 8px;
+    background-image: url("../assets/imgs/1x/Recurso\ 7_1.png");
+    background-size: 100% 100%;
+    font-style: normal;
+    font-family: "Comic" !important;
+    font-size: 110%;
+    height: 70%;
+
+}
+.tab-button{
+    background-image: url("../assets/imgs/1x/Recurso\ 7_1.png");
+    background-size: 100% 100%;
+    color: #fff;
+}
+.tabs-md .tab-button {
+    min-height: 5.6rem;
+    font-family: 'Comic Bold';
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.548);
+    padding: 0;
+}
+.tabs-wp .tab-button {
+    min-height: 5.6rem;
+    font-family: 'Comic Bold';
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.548);
+    padding: 0;
+}
+.tabs-ios .tab-button {
+    min-height: 5.6rem;
+    font-family: 'Comic Bold';
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.548);
+    padding: 0;
+}
+.tabs-md .tab-button[aria-selected=true] {
+    color: #488aff;
+    padding: 0;
+}
+.tabs-wp .tab-button[aria-selected=true] {
+    color: #488aff;
+    padding: 0;
+}
+.tabs-ios .tab-button[aria-selected=true] {
+    color: #488aff;
+    padding: 0;
+}
+.alert-md .alert-radio-label {
+    font-family: 'Comic';
+    color: #00fffd;
+    font-size: 140%;
+}
+.alert-wp .alert-radio-label {
+    font-family: 'Comic';
+    color: #00fffd;
+    font-size: 140%;
+}
+.alert-ios .alert-radio-label {
+    font-family: 'Comic';
+    color: #00fffd;
+    font-size: 140%;
+}
+.alert-md [aria-checked=true] .alert-radio-label {
+    font-family: 'Comic';
+    color: #fff;
+}
+
+.alert-md .alert-radio-icon {
+    border-color: #00fffd;
+}
+.alert-md [aria-checked=true] .alert-radio-icon {
+    border-color: #fff;
+}
+.alert-md .alert-radio-inner {
+    background-color: #fff;
+}
+.alert-wp [aria-checked=true] .alert-radio-label {
+    font-family: 'Comic';
+    color: #fff;
+}
+
+.alert-wp .alert-radio-icon {
+    border-color: #00fffd;
+}
+.alert-wp [aria-checked=true] .alert-radio-icon {
+    border-color: #fff;
+}
+.alert-wp .alert-radio-inner {
+    background-color: #fff;
+}
+.alert-ios [aria-checked=true] .alert-radio-label {
+    font-family: 'Comic';
+    color: #fff;
+}
+
+.alert-ios .alert-radio-icon {
+    border-color: #00fffd;
+}
+.alert-ios [aria-checked=true] .alert-radio-icon {
+    border-color: #fff;
+}
+.alert-ios .alert-radio-inner {
+    background-color: #fff;
+}

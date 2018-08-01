@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-navbar color="tribius1">
+    <ion-title text-center class="toolbar-background">Jugar</ion-title>
+  </ion-navbar>
+  <ion-fab right middle bottom>
+    <button ion-fab mini class="button-wooden" (click)="updateSound()">
+      <ion-icon ios="ios-volume-{{icono_son}}" md="md-volume-{{icono_son}}"></ion-icon>
+    </button>
+  </ion-fab>
+</ion-header>
+
+<ion-content no-border>
+  <div>
+    <h1 class="listo">¿Estas Listo?</h1>
+  </div>
+  <div class="center">
+    <div class="progress blue">
+      <span class="progress-left">
+        <span class="progress-bar"></span>
+      </span>
+      <span class="progress-right">
+        <span class="progress-bar"></span>
+      </span>
+      <div class="progress-value">{{numero}}</div>
+    </div>
+  </div>
+  <button ion-button (click)="StopStart()" round color="obscuro" class="center-b">{{status}}</button>
+
+</ion-content>

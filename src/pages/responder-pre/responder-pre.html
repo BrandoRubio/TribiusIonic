@@ -1,0 +1,48 @@
+<ion-header>
+  <ion-navbar color="tribius">
+    <ion-title text-center class="toolbar-background">Juego en curso</ion-title>
+  </ion-navbar>
+  <ion-fab right middle bottom>
+    <button ion-fab mini class="button-wooden" (click)="updateSound()">
+      <ion-icon ios="ios-volume-{{icono_son}}" md="md-volume-{{icono_son}}"></ion-icon>
+    </button>
+  </ion-fab>
+</ion-header>
+
+
+<ion-content text-center>
+  <p class="sombra">{{ nombre }}</p>
+  <ion-item text-center no-lines class="sombra">
+    <img src="{{imagen}}" width="150" />
+  </ion-item>
+  <button ion-button round color="respuestas" (click)="verifica(item)" *ngFor="let item of respuestas" class="wooden">{{item.nombre}}</button>
+
+</ion-content>
+
+<ion-footer>
+  <ion-footer no-border>
+    <div text-center>
+      <div class="marcador">
+        <ion-item class="transparent" no-lines>
+          <div style="width: 40px; float:left;">
+            <img src="assets/imgs/check.png" width="40" />
+          </div>
+          <div style="float:left;">
+            <h2>{{puntos}}pts</h2>
+          </div>
+          <ion-fab center middle>
+            <button ion-fab color="{{color}}">
+              <h1 class="h">{{segundos}}s</h1>
+            </button>
+          </ion-fab>
+          <div style="width: 40px;float:right;">
+            <img src="assets/imgs/cross.png" width="40" />
+          </div>
+          <div style="width: 45px;float:right;">
+            <h2>{{puntosMenos}}pts</h2>
+          </div>
+        </ion-item>
+      </div>
+    </div>
+  </ion-footer>
+</ion-footer>
